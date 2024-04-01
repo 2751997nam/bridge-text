@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bridge Text</title>
+
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+        .control-group {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="control-group">
+        <canvas id="demo" width="400" height="300"></canvas>
+    </div>
+    <div class="control-group">
+        <span>Curve:</span>
+        <input id="iCurve" type="range" min="0" max="200" value="110">
+        <span id="vCurve">110</span>
+    </div>
+    <div class="control-group">
+        <span>OffsetY:</span>
+        <input id="iOffset" type="range" min="0" max="100" value="4">
+        <span id="vOffset">0</span>
+    </div>
+    <div class="control-group">
+        <span>Text height:</span>
+        <input id="iHeight" type="range" min="0" max="200" value="64">
+        <span id="vHeight">64</span>
+    </div>
+    <div class="control-group">
+        <span>Bottom:</span>
+        <input id="iBottom" type="range" min="0" max="200" value="200">
+        <span id="vBottom">200</span>
+    </div>
+    <div class="control-group">
+        <span>Triangle:</span>
+        <input id="iTriangle" type="checkbox">
+    </div>
+    <div class="control-group">
+        <span>Text:</span>
+        <input id="iText" type="text" value="BRIDGE TEXT">
+    </div>
+
+    <script src="/js/bridge-text.js"></script>
+</body>
+</html>
